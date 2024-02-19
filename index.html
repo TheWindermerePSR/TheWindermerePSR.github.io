@@ -536,7 +536,7 @@ $(document).ready(function() {
         <div id="hero-container">
           <div class="agentcustomarea background-image" >
 <!--<div class="agentcustomarea background-image">-->
-    <input type="hidden" id="agentcustomarea-background-customAreaType" class="customAreaType" value="Image" /><div class="background-image-element" style="background-image: url('images\interior18.jpg')"></div>
+    <input type="hidden" id="agentcustomarea-background-customAreaType" class="customAreaType" value="Image" /><div class="background-image-element" style="background-image: url('images/interior18.jpg')"></div>
     <div class="custom-area-sibling"></div>
 </div>
 
@@ -545,7 +545,7 @@ $(document).ready(function() {
                   <!-- Find your dream home -->
                   <div class="agentcustomarea headline-text" >
 <!--<div class="agentcustomarea headline-text">-->
-    <input type="hidden" id="agentcustomarea-Headline-customAreaType" class="customAreaType" value="Text" /><div class="agentcustomareatext"><p>Find Your New Home</p>
+    <input type="hidden" id="agentcustomarea-Headline-customAreaType" class="customAreaType" value="Text" /><div class="agentcustomareatext"><p>Join a Renton Renl Estate Tour</p>
 </div>
     <div class="custom-area-sibling"></div>
 </div>
@@ -553,22 +553,34 @@ $(document).ready(function() {
               </div>
               <div id="search-box">
                   <div class="searchbylocation">
-  <div class="search-type-inline">
-    <span class="search-type search-type-location">Search by Location</span>
-    <span>|</span>
-    <span class="search-type search-type-drive"> Search by Drive Time&trade;</span>
-  </div>
+  <!-- <div class="search-type-inline"> -->
+    <!-- <span class="search-type search-type-location">Search by Location</span> -->
+    <!-- <span>|</span> -->
+    <!-- <span class="search-type search-type-drive"> Search by Drive Time&trade;</span> -->
+  <!-- </div> -->
   <div class="search-main form-group">
     <input type="text" 
-           placeholder="Neighborhood, City, ZIP, or MLS#" 
-           aria-label="Neighborhood, City, ZIP, or MLS#" 
+           placeholder="Name" 
+           aria-label="Name" 
            class="responsive-search-string search-location searchTerms google_ac form-control"
            data-is-canada="false"
            value="" />
+    <input type="text" 
+           placeholder="Phone" 
+           aria-label="Phone" 
+           class="responsive-search-string search-location searchTerms google_ac form-control"
+           data-is-canada="false"
+           value="" />
+    <input type="text" 
+           placeholder="Email (optional)" 
+           aria-label="Email" 
+           class="responsive-search-string search-location searchTerms google_ac form-control"
+           data-is-canada="false"
+           value="" />
+          </div>
     <button type="submit" class="searchByLocationSubmit"><i class="search-icon fa fa-search fa-2x"></i></button>
-  </div>
   <div class="search-near-me-inline">
-    <span class="search-near-me pull-left">search near me <i class="fa fa-location-arrow"></i></span>
+    <span class="search-near-me pull-left">Fun, Easy, No Obligation <i class="fa fa-location-arrow"></i></span>
   </div>
 </div>
 
@@ -640,9 +652,9 @@ $(document).ready(function() {
                 </div>
             </div>
             <div class="email"><a href="javascript:void(0)"  data-modal-mxform="generic_contact"  data-to-email="susancamerer@windermere.com" data-recipient-email="susancamerer@windermere.com" >susancamerer@windermere.com</a></div>
-            <div class="agent-office">Renton- PSR </div>
+            <!-- <div class="agent-office">Renton- PSR </div> -->
         </div>
-        <button id="template-contact-me" type="button" class="btn btn-default"  data-modal-mxform="generic_contact" >Contact Me</button>
+        <!-- <button id="template-contact-me" type="button" class="btn btn-default"  data-modal-mxform="generic_contact" >Contact Me</button> -->
     </div>
 </div>
 
@@ -651,8 +663,12 @@ $(document).ready(function() {
             <div id="search-statement" class="col-sm-6">
                 <div class="agentcustomarea welcome-text-text" >
 <!--<div class="agentcustomarea welcome-text-text">-->
-    <input type="hidden" id="agentcustomarea-WelcomeText-customAreaType" class="customAreaType" value="Text" /><div class="agentcustomareatext"><p>If you're looking to buy, sell or invest in a home or property, you've come to the right place. I am excited to utilize my skills as a licensed real estate broker, my expertise as a licensed general contractor and over 20 years of construction experience to assist buyers and sellers with their real estate needs. Whether you're looking to buy or sell, I can help you achieve your goals with ease. On my website, you will find the latest real estate information and search for homes in the Western United States. When you're ready, don't hesitate to contact me and let me put my experience to work for you.</p>
-</div>
+    <input type="hidden" id="agentcustomarea-WelcomeText-customAreaType" class="customAreaType" value="Text" />
+      <div class="agentcustomareatext">
+        <p>
+          Want a fun, easy way to learn more about buying real estate in Renton? Join us on one of our weekly Renton Real Estate Tours. We meet at a local coffee shop, we buy your favorite brew, and you tag along to local listings we are touring that day or ones that have piqued your interest. We are flexible! RSVP above and Austin will text you with the meet up location in Renton. 
+        </p>
+      </div>
     <div class="custom-area-sibling"></div>
 </div>
 
@@ -791,12 +807,11 @@ $(document).ready(function() {
         <div class="row">
             <div class="container">
 
-              <img class="neighborhoodnews-background-img" src="/wp-content/plugins/mx_pages/neighborhood-news/images/NN_couple_crop-1200x187.jpg"/>
+              <img class="neighborhoodnews-background-img" src="images/NN_couple_crop-1200x187.jpg"/>
 
               <div class="neighborhoodnews clearfix">
                 <div class="col-xs-12">
                   <div class="col-xs-4">
-                    <img class="neighborhoodnews-device-img pull-right" src="images\NN_couple_crop-1200x187.jpg"/>
                   </div>
                   <div class="col-xs-6">
                     <div class="neighborhoodnews-title">
