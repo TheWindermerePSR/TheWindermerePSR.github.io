@@ -755,6 +755,54 @@
     .nav.navbar-nav>li a:focus {
       outline-offset: -3px
     }
+
+    .searchByLocationSubmit {
+        background-color: #1C93BE; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .searchByLocationSubmit:hover {
+        background-color: #147ba1; 
+    }
+
+    .search-main {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .search-main input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .search-main button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+    }
+
+    .search-main button:hover {
+        background-color: #007bff;
+    }
   </style>
   <script>
     if (document.location.protocol != "https:") {
@@ -1271,8 +1319,8 @@ More Information :
                           class="custom">What My Clients Say</a></li>
                       <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/my-kindness-campaign"
                           class="custom">My Kindness Campaign</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/seahawks2023"
-                          class="custom">Seattle Seahawks 2023 Schedule</a></li>
+                      <!-- <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/seahawks2023"
+                          class="custom">Seattle Seahawks 2023 Schedule</a></li> -->
                     </ul>
                   </li>
                   <li class="nav-menu-item"><a href="#" class="menuitem">Blog</a>
@@ -1359,7 +1407,7 @@ More Information :
           </div>
 
           <div id="search-hero-overlay">
-            <div id="search-headline">
+            <div id="search-headline" style="margin: 0">
               <!-- Find your dream home -->
               <div class="agentcustomarea headline-text">
                 <!--<div class="agentcustomarea headline-text">-->
@@ -1371,30 +1419,23 @@ More Information :
                 </div>
                 <div class="custom-area-sibling"></div>
               </div>
-
             </div>
             <div id="search-box">
               <div class="searchbylocation">
-                <!-- <div class="search-type-inline"> -->
-                <!-- <span class="search-type search-type-location">Search by Location</span> -->
-                <!-- <span>|</span> -->
-                <!-- <span class="search-type search-type-drive"> Search by Drive Time&trade;</span> -->
-                <!-- </div> -->
-                <div class="search-main form-group">
-                  <input type="text" placeholder="Name" aria-label="Name"
-                    class="responsive-search-string search-location searchTerms google_ac form-control"
-                    data-is-canada="false" value="" />
-                  <input type="text" placeholder="Phone" aria-label="Phone"
-                    class="responsive-search-string search-location searchTerms google_ac form-control"
-                    data-is-canada="false" value="" />
-                  <input type="text" placeholder="Email (optional)" aria-label="Email"
-                    class="responsive-search-string search-location searchTerms google_ac form-control"
-                    data-is-canada="false" value="" />
-                </div>
-                <button type="submit" class="searchByLocationSubmit">Register Here</button>
+                  <div class="search-main form-group">
+                      <input type="text" placeholder="Name" aria-label="Name"
+                             class="responsive-search-string search-location searchTerms google_ac form-control"
+                             data-is-canada="false" value="" />
+                      <input type="text" placeholder="Phone" aria-label="Phone"
+                             class="responsive-search-string search-location searchTerms google_ac form-control"
+                             data-is-canada="false" value="" />
+                      <input type="text" placeholder="Email (optional)" aria-label="Email"
+                             class="responsive-search-string search-location searchTerms google_ac form-control"
+                             data-is-canada="false" value="" />
+                            </div>
+                      <button type="submit" class="searchByLocationSubmit">Register Here</button>
               </div>
-
-            </div>
+          </div>
           </div>
         </div>
         <div id="affix-bar">
@@ -1546,7 +1587,7 @@ More Information :
       </div>
     </div>
 
-    <nav id="dotNav" class="affix">
+    <!-- <nav id="dotNav" class="affix">
       <ul class="nav">
         <li><a href="#wrapper" data-toggle="tooltip" data-placement="left" title="Top"></a></li>
         <li>
@@ -1556,7 +1597,7 @@ More Information :
           <a href="#three" data-toggle="tooltip" data-placement="left" title="Other Information"></a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
     <script language="javascript">
       timerInterval = 4000;
       slideShowCounts = jQuery(".customPropertyListing").length;
