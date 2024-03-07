@@ -757,51 +757,58 @@
     }
 
     .searchByLocationSubmit {
-        background-color: #1C93BE; 
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 10px;
+      background-color: #1C93BE;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
     }
 
     .searchByLocationSubmit:hover {
-        background-color: #147ba1; 
+      background-color: #147ba1;
     }
 
     .search-main {
-        border: 1px solid #ccc;
-        padding: 15px;
-        border-radius: 5px;
-        margin-bottom: 15px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 15px;
     }
 
     .search-main input[type="text"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 5px;
-        box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
     }
 
     .search-main button {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: dodgerblue;
-        color: white;
-        cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: dodgerblue;
+      color: white;
+      cursor: pointer;
     }
 
     .search-main button:hover {
-        background-color: #007bff;
+      background-color: #007bff;
+    }
+
+    @media screen and (max-width: 812px) {
+      .form-field {
+        height: 5vh;
+        margin: 0 auto;
+      }
     }
   </style>
   <script>
@@ -1288,39 +1295,12 @@ More Information :
                   </div>
                 </div>
                 <ul class="nav navbar-nav top-level-nav sf-menu sf-shadow">
-                  <li class="nav-menu-item"><a href="#" class="menuitem">Properties</a>
-                    <ul class="dropdown-menu">
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/search/#!/defaultsearch:true"
-                          onclick="window.location.assign('https://susancamerer.withwre.com/search/#!/defaultsearch:true'); return false;"
-                          class="search">Property Search</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/listings/my-active-listings"
-                          class="property">My Active Listings</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/listings/my-sold-listings"
-                          class="property">My Sold Listings</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/listings/my-office-s-listings"
-                          class="property">My Office&#039;s Listings</a></li>
-                    </ul>
-                  </li>
                   <li class="nav-menu-item"><a href="#" class="menuitem">Buying &amp; Selling</a>
                     <ul class="dropdown-menu">
                       <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/buying-and-selling-tips"
                           class="buyingandselling">Buying &amp; Selling Tips</a></li>
                       <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/financial-calculators"
                           class="financialcalculators">Financial Calculators</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-menu-item"><a href="#" class="menuitem">About Susan</a>
-                    <ul class="dropdown-menu">
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/profile/my-bio"
-                          class="profile">My Bio</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/contact-me"
-                          class="contactme">Contact Me</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/what-my-clients-say"
-                          class="custom">What My Clients Say</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/my-kindness-campaign"
-                          class="custom">My Kindness Campaign</a></li>
-                      <!-- <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/seahawks2023"
-                          class="custom">Seattle Seahawks 2023 Schedule</a></li> -->
                     </ul>
                   </li>
                   <li class="nav-menu-item"><a href="#" class="menuitem">Blog</a>
@@ -1343,16 +1323,6 @@ More Information :
                           class="brokerage-share-page">Windermere Ready</a></li>
                       <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/home-maintenance-guide-2"
                           class="custom">Home Maintenance Guide</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/link-in-bio" class="custom">More
-                      Info</a></li>
-                  <li class="nav-menu-item more"><a class="more-dropdown" data-toggle="dropdown" href="#">More</a>
-                    <ul class="dropdown-menu more-dropdown-menu">
-                      <li class="login-register secondary" data-id-suffix="BurgerMenu"></li>
-                      <li class="user-name secondary" data-id-suffix="BurgerMenu"><a href="#"></a>
-                        <ul class="dropdown-menu"></ul>
-                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -1400,7 +1370,6 @@ More Information :
       <div id="one" class="subheader">
         <div id="hero-container">
           <div class="agentcustomarea background-image">
-            <!--<div class="agentcustomarea background-image">-->
             <input type="hidden" id="agentcustomarea-background-customAreaType" class="customAreaType" value="Image" />
             <div class="background-image-element" style="background-image: url('images/interior18.jpg')"></div>
             <div class="custom-area-sibling"></div>
@@ -1408,9 +1377,7 @@ More Information :
 
           <div id="search-hero-overlay">
             <div id="search-headline" style="margin: 0">
-              <!-- Find your dream home -->
               <div class="agentcustomarea headline-text">
-                <!--<div class="agentcustomarea headline-text">-->
                 <img src="images\Camerer_Logo_White_Horizontal.png" class="customAreaType"
                   style="max-width: 20%; margin: 0 auto;" />
                 <input type="hidden" id="agentcustomarea-Headline-customAreaType" class="customAreaType" value="Text" />
@@ -1422,20 +1389,20 @@ More Information :
             </div>
             <div id="search-box">
               <div class="searchbylocation">
-                  <div class="search-main form-group">
-                      <input type="text" placeholder="Name" aria-label="Name"
-                             class="responsive-search-string search-location searchTerms google_ac form-control"
-                             data-is-canada="false" value="" />
-                      <input type="text" placeholder="Phone" aria-label="Phone"
-                             class="responsive-search-string search-location searchTerms google_ac form-control"
-                             data-is-canada="false" value="" />
-                      <input type="text" placeholder="Email (optional)" aria-label="Email"
-                             class="responsive-search-string search-location searchTerms google_ac form-control"
-                             data-is-canada="false" value="" />
-                            </div>
-                      <button type="submit" class="searchByLocationSubmit">Register Here</button>
+                <div class="search-main form-group">
+                  <input type="text" placeholder="Name" aria-label="Name"
+                    class="responsive-search-string search-location searchTerms google_ac form-control form-field"
+                    data-is-canada="false" value="" />
+                  <input type="text" placeholder="Phone" aria-label="Phone"
+                    class="responsive-search-string search-location searchTerms google_ac form-control"
+                    data-is-canada="false" value="" />
+                  <input type="text" placeholder="Email (optional)" aria-label="Email"
+                    class="responsive-search-string search-location searchTerms google_ac form-control"
+                    data-is-canada="false" value="" />
+                </div>
+                <button type="submit" class="searchByLocationSubmit">Register Here</button>
               </div>
-          </div>
+            </div>
           </div>
         </div>
         <div id="affix-bar">
@@ -1446,10 +1413,8 @@ More Information :
                 <div class="aboutanagentbar">
                   <div class="name-block pull-left">
                     <div class="agent-name">Camerer Real Estate</div>
-                    <!-- <div class="agent-title">Broker, REALTOR&reg; </div> -->
                   </div>
                   <div class="contact-button-block pull-left">
-                    <!-- <button id="template-bar-contact-me" type="button" class="btn btn-default"  data-modal-mxform="generic_contact"  >Contact Me</button> -->
                   </div>
                 </div>
 
@@ -1542,7 +1507,6 @@ More Information :
           </div>
           <div id="search-statement" class="col-sm-6">
             <div class="agentcustomarea welcome-text-text">
-              <!--<div class="agentcustomarea welcome-text-text">-->
               <input type="hidden" id="agentcustomarea-WelcomeText-customAreaType" class="customAreaType"
                 value="Text" />
               <div class="agentcustomareatext">
@@ -1563,41 +1527,8 @@ More Information :
 
           </div>
         </div>
-        <div class="page-down">
-          <a href="#two" class="fa fa-angle-down"></a>
-        </div>
-      </div>
-      <div class="mainbody container-fluid">
-        <div id="two" class="subbody row">
-          <div class="section-background">
-            <div class="container">
-              <div id="home-featured-properties" class="col-md-10 col-md-offset-1">
-                <div
-                  data-get-widget="{&quot;partialName&quot;:&quot; Featured Properties&quot;,&quot;class&quot;:&quot;featuredproperties&quot;,&quot;folder&quot;:&quot;featuredproperties&quot;,&quot;admin&quot;:0,&quot;options&quot;:{&quot;imagewidth&quot;:&quot;437&quot;,&quot;imageheight&quot;:&quot;292&quot;,&quot;showarrows&quot;:&quot;always&quot;,&quot;columns&quot;:&quot;2&quot;,&quot;rows&quot;:&quot;2&quot;,&quot;hidebuffer&quot;:&quot;10&quot;,&quot;async&quot;:&quot;true&quot;},&quot;status&quot;:&quot;partial&quot;,&quot;name&quot;:&quot;0&quot;,&quot;obj&quot;:{},&quot;data&quot;:{&quot;title&quot;:&quot;Featured Properties&quot;,&quot;list&quot;:&quot;105623&quot;,&quot;numblocks&quot;:&quot;20&quot;}}"
-                  data-target-parent="yes" data-widget-check="[data-propcard-listing-id]"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div id="home-custom-search" class="col-md-12">
-
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-
-    <!-- <nav id="dotNav" class="affix">
-      <ul class="nav">
-        <li><a href="#wrapper" data-toggle="tooltip" data-placement="left" title="Top"></a></li>
-        <li>
-          <a href="#two" data-toggle="tooltip" data-placement="left" title="Featured Listings"></a>
-        </li>
-        <li>
-          <a href="#three" data-toggle="tooltip" data-placement="left" title="Other Information"></a>
-        </li>
-      </ul>
-    </nav> -->
     <script language="javascript">
       timerInterval = 4000;
       slideShowCounts = jQuery(".customPropertyListing").length;
