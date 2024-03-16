@@ -1209,6 +1209,12 @@ More Information :
         body.layout-largeimage div.nav-bar {
           border: 0;
         }
+
+        @media screen and (max-width: 767px) {
+          .b2b-image {
+            margin-top: 80px;
+          }
+        }
       </style>
       <script id="myWindermereSvg" type="text/html">
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="32"
@@ -1270,7 +1276,7 @@ More Information :
               <div class="navbar-outer logo-left">
                 <div id="mxHeaderleft">
                   <div class="navbar-logo">
-                    <img class="navbar-brand-logo large-logo normal-logo" style=”display:none;”
+                    <img class="navbar-brand-logo large-logo normal-logo" style="display:none;"
                       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
                     <a class="navbar-brand" aria-label="Link to home page" data-menu-item="logo" href="/">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -1288,19 +1294,6 @@ More Information :
                   </div>
                 </div>
                 <ul class="nav navbar-nav top-level-nav sf-menu sf-shadow">
-                  <!-- <li class="nav-menu-item"><a href="#" class="menuitem">Properties</a>
-                    <ul class="dropdown-menu">
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/search/#!/defaultsearch:true"
-                          onclick="window.location.assign('https://susancamerer.withwre.com/search/#!/defaultsearch:true'); return false;"
-                          class="search">Property Search</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/listings/my-active-listings"
-                          class="property">My Active Listings</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/listings/my-sold-listings"
-                          class="property">My Sold Listings</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/listings/my-office-s-listings"
-                          class="property">My Office&#039;s Listings</a></li>
-                    </ul>
-                  </li> -->
                   <li class="nav-menu-item"><a href="#" class="menuitem">Buying &amp; Selling</a>
                     <ul class="dropdown-menu">
                       <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/buying-and-selling-tips"
@@ -1309,20 +1302,6 @@ More Information :
                           class="financialcalculators">Financial Calculators</a></li>
                     </ul>
                   </li>
-                  <!-- <li class="nav-menu-item"><a href="#" class="menuitem">About Susan</a>
-                    <ul class="dropdown-menu">
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/profile/my-bio"
-                          class="profile">My Bio</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/contact-me"
-                          class="contactme">Contact Me</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/what-my-clients-say"
-                          class="custom">What My Clients Say</a></li>
-                      <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/my-kindness-campaign"
-                          class="custom">My Kindness Campaign</a></li>
-                       <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/seahawks2023"
-                          class="custom">Seattle Seahawks 2023 Schedule</a></li> 
-                    </ul>
-                  </li> -->
                   <li class="nav-menu-item"><a href="#" class="menuitem">Blog</a>
                     <ul class="dropdown-menu">
                       <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/blog/my-blog" class="blog">My
@@ -1345,8 +1324,6 @@ More Information :
                           class="custom">Home Maintenance Guide</a></li>
                     </ul>
                   </li>
-                  <!-- <li class="nav-menu-item"><a href="https://susancamerer.withwre.com/link-in-bio" class="custom">More
-                      Info</a></li> -->
                   <li class="nav-menu-item more"><a class="more-dropdown" data-toggle="dropdown" href="#">More</a>
                     <ul class="dropdown-menu more-dropdown-menu">
                       <li class="login-register secondary" data-id-suffix="BurgerMenu"></li>
@@ -1368,6 +1345,8 @@ More Information :
             </div>
           </div>
         </div>
+        <div id="searchFormButton" class="search-shortcut fa fa-search fa-3x"></div>
+
       </div>
       <script language="javascript">
         $(document).on("webUserLoggedIn", function (event, webUser) {
@@ -1443,10 +1422,6 @@ More Information :
                 <div class="aboutanagentbar">
                   <div class="name-block pull-left">
                     <div class="agent-name">Camerer Real Estate</div>
-                    <!-- <div class="agent-title">Broker, REALTOR&reg; </div> -->
-                  </div>
-                  <div class="contact-button-block pull-left">
-                    <!-- <button id="template-bar-contact-me" type="button" class="btn btn-default"  data-modal-mxform="generic_contact"  >Contact Me</button> -->
                   </div>
                 </div>
 
@@ -1457,14 +1432,6 @@ More Information :
                     <span class="search-type search-type-location">Search by Location</span>
                     <span>|</span>
                     <span class="search-type search-type-drive"> Search by Drive Time&trade;</span>
-                  </div>
-                  <div class="search-main form-group">
-                    <input type="text" placeholder="Neighborhood, City, ZIP, or MLS#"
-                      aria-label="Neighborhood, City, ZIP, or MLS#"
-                      class="responsive-search-string search-location searchTerms google_ac form-control"
-                      data-is-canada="false" value="" />
-                    <button type="submit" class="searchByLocationSubmit"><i
-                        class="search-icon fa fa-search fa-2x"></i></button>
                   </div>
                   <div class="search-near-me-inline">
                     <span class="search-near-me pull-left">search near me <i class="fa fa-location-arrow"></i></span>
@@ -1478,7 +1445,7 @@ More Information :
         <div class="col-sm-12">
           <div id="about-agent" class="col-sm-6">
             <div class="aboutanagent-responsive">
-              <div class="aboutanagent-photo">
+              <div class="aboutanagent-photo b2b-image">
                 <img src="images\back_to_back.png" class="img-responsive" />
               </div>
               <div class="aboutanagent-data">
