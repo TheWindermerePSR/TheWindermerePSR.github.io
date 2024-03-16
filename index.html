@@ -1215,6 +1215,18 @@ More Information :
             margin-top: 80px;
           }
         }
+
+        #searchFormButton {
+            display: none;
+        }
+
+        @media screen and (max-width: 812px) {
+          #searchFormButton {
+            margin-top: 5px;
+            float: right;
+            display:block;
+          }
+        }
       </style>
       <script id="myWindermereSvg" type="text/html">
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="32"
@@ -1343,10 +1355,9 @@ More Information :
                 </ul>
               </div>
             </div>
+            <div id="searchFormButton" class="search-shortcut fa fa-search fa-3x search-icon"></div>
           </div>
         </div>
-        <div id="searchFormButton" class="search-shortcut fa fa-search fa-3x"></div>
-
       </div>
       <script language="javascript">
         $(document).on("webUserLoggedIn", function (event, webUser) {
@@ -1414,17 +1425,16 @@ More Information :
           </div>
           </div>
         </div>
-        <div id="affix-bar">
-          <div class="container">
+        <!-- <div id="affix-bar"> -->
+          <!-- <div class="container"> -->
             <div class="row">
-              <div id="searchFormButton" class="search-shortcut fa fa-search fa-3x"></div>
-              <div class="affix-bar-agent col-xs-6">
+              <!-- <div id="searchFormButton" class="search-shortcut fa fa-search fa-3x"></div> -->
+              <!-- <div class="affix-bar-agent col-xs-6">
                 <div class="aboutanagentbar">
                   <div class="name-block pull-left">
                     <div class="agent-name">Camerer Real Estate</div>
                   </div>
                 </div>
-
               </div>
               <div class="affix-bar-search search-location-type-only col-xs-6">
                 <div class="searchbylocation">
@@ -1437,11 +1447,10 @@ More Information :
                     <span class="search-near-me pull-left">search near me <i class="fa fa-location-arrow"></i></span>
                   </div>
                 </div>
-
-              </div>
+              </div> -->
             </div>
-          </div>
-        </div>
+          <!-- </div> -->
+        <!-- </div> -->
         <div class="col-sm-12">
           <div id="about-agent" class="col-sm-6">
             <div class="aboutanagent-responsive">
